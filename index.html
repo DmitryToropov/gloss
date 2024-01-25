@@ -94,7 +94,7 @@
        document.getElementById('defineForm').addEventListener('submit', function (event) {
             event.preventDefault();
             const term = document.getElementById('term').value.toUpperCase();
-            fetch(`http://spaceresident.ru/api/define/${term}`)
+            fetch(`https://t2c5j3tl-3000.euw.devtunnels.ms//api/define/${term}`)
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('definitionResult').innerHTML = `<p><strong>${data.term}:</strong> ${data.definition}</p>`;
