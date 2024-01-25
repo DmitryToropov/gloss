@@ -91,7 +91,7 @@
     <div id="definitionResult"></div>
 
     <script>
-        document.getElementById('defineForm').addEventListener('submit', function (event) {
+       document.getElementById('defineForm').addEventListener('submit', function (event) {
             event.preventDefault();
             const term = document.getElementById('term').value.toUpperCase();
             fetch(`http://spaceresident.ru/api/define/${term}`)
